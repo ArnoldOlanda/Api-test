@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 //Routes
-app.post("/", (req, res) =>{
+app.get("/", (req, res) =>{
     res.send("<h1>Bienvenido a la apit con node y mysql</h1>");
 });
 
