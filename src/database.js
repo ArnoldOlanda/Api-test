@@ -6,13 +6,13 @@ const mysqlConnection = mysql.createPool({
     database: 'heroku_1afd92976209ef6'
 });
 
-mysqlConnection.connect((err)=>{
-    if(err){
-        console.log(err);
-        return;
-    }else
-        console.log('Database connected');
-})
+// mysqlConnection.connect((err)=>{
+//     if(err){
+//         console.log(err);
+//         return;
+//     }else
+//         console.log('Database connected');
+// })
 
 module.exports = mysqlConnection;
 //Cadena de conexion
