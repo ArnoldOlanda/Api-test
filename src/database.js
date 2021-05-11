@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const mysqlConnection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'company'
+    host: 'us-cdbr-east-03.cleardb.com',
+    user: 'be19873b9859ad',
+    password: 'a0b7b6d9',
+    database: 'heroku_1afd92976209ef6'
 });
 
 mysqlConnection.connect((err)=>{
@@ -15,3 +15,5 @@ mysqlConnection.connect((err)=>{
 })
 
 module.exports = mysqlConnection;
+//Cadena de conexion
+//mysql://be19873b9859ad:a0b7b6d9@us-cdbr-east-03.cleardb.com/heroku_1afd92976209ef6?reconnect=true
