@@ -14,11 +14,10 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 //Routes
-app.post("/api/movie", (req, res) =>{
-    console.log(req.params);
-    console.log(req.body);
-    res.send("Datos recibidos");
+app.post("/", (req, res) =>{
+    res.send("<h1>Bienvenido a la apit con node y mysql</h1>");
 });
+
 app.use('/api/',require('./routes/employees'));
 
 
