@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+
 //Requerimos el modulo database 
 const mysqlConnection = require('../database');
 
